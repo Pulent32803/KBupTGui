@@ -270,8 +270,19 @@ end
 
 -- Создаем кнопки скриптов
 local ScriptButtons = {}
+local scriptNames = {
+    "Fly Hack",
+    "Speed Changer", 
+    "Fling Players",
+    "Noclip Mode",
+    "God Mode",
+    "Emote Menu",
+    "Aimbot",
+    "Player ESP"
+}
+
 for i = 1, 8 do
-    local button = CreateScriptButton("Скрипт " .. i)
+    local button = CreateScriptButton(scriptNames[i])
     table.insert(ScriptButtons, button)
 end
 
